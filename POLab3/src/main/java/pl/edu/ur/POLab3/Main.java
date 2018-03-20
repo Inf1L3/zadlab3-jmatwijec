@@ -42,16 +42,16 @@ public class Main {
     }
 
     public static int fib(int n) {
-        if(n==0){
+        if (n == 0) {
             return 0;
         }
-        if(n==1){
+        if (n == 1) {
             return 1;
         }
-        if(n>1){
-            return fib(n-1)+fib(n-2);
+        if (n > 1) {
+            return fib(n - 1) + fib(n - 2);
         }
-        return 1; // nie wiem czemu musi byc tutaj return bo krzyczy to dalem 
+        return 1;
     }
 
     // TODO 1.4, 1.7, 
@@ -68,9 +68,10 @@ public class Main {
         System.out.println(potegowanie_it(2, 3));
         System.out.println(power(2, 3));
          */
- /*
-        //zad 2.2 
+
+        //zad 2.2  Zrodla glownie tutorialspoint, javapoint
         // Zamina stringa na tablice znakow https://www.javatpoint.com/java-string-tochararray
+        /*
         String s1 = "hello";
         char[] ch = s1.toCharArray();
         for (int i = 0; i < ch.length; i++) {
@@ -92,10 +93,30 @@ public class Main {
         System.out.println(s1.equals(s4));//false because content is not same 
         //pornowuje bez znaczenie wielkosc liter
         System.out.println(s1.equalsIgnoreCase(s3)); //true
-         */
-        // 
+        String str_Sample = "RockStar";
+        System.out.println("Compare To 'ROCKSTAR': " + str_Sample.compareTo("rockstar"));
+        //Compare to - Ignore case
+        System.out.println("Compare To 'ROCKSTAR' - Case Ignored: " + str_Sample.compareToIgnoreCase("ROCKSTAR"));
+        System.out.println(s1.indexOf("p"));//liczy od poczatku pozycje
+        System.out.println(s1.lastIndexOf("p"));//liczy od konca pozyjce
+        System.out.println(s1.substring(5)); // tworzy stringa od pozycji x
+        System.out.println(s1.substring(5,7)); //to samo tylko od x do y
+        System.out.println(s1.replace("j", "p")); // zamienia j na p;
+        System.out.println(s1.trim()); //Zwraca kopię ciągu znaków z pominiętymi początkowymi i końcowymi spacji.
+        System.out.println(s1.toLowerCase());//male znaki
+        System.out.println(s1.toUpperCase()); // duze znaki
+              String cos = new String("Welcome-to-Tutorialspoint.com");
+      System.out.println("Return Value :" );      
+      
+      for (String retval: cos.split("-")) { //dzieli strnga 
+         System.out.println(retval);
+      }
+            for (String retval: cos.split("-", 2)) { //dzielni stringa na x kawalkow
+         System.out.println(retval);
+      }//Dzieli ten ciąg wokół dopasowań danego wyrażenia regularnego.
+        */
         // zad 1.7
-        /*if (!(false)) {
+                /*if (!(false)) {
             System.out.println("not");
         }
         if (true ^ false) {
@@ -104,9 +125,8 @@ public class Main {
         if (true ^ true) {
             System.out.println("xor tu nie dziala i gdy wystepuja 2 jedynki lub 2 zera");
         }
-         */
-        // 1.4 uwaga,trzeba miec java 7+ (liczby binarne)
-        /*
+                 */ // 1.4 uwaga,trzeba miec java 7+ (liczby binarne)
+                /*
         int a= 111; //3
         int i = 0b1111; //000 1111
         System.out.println(i);
@@ -117,7 +137,7 @@ public class Main {
         i=0b10001;
         i=i>>>3; //010=2
         System.out.println(i);
-         */
+                 */
     }
     /*
 /* ZADANIA ROBIONE NA LKECJI
